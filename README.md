@@ -8,7 +8,7 @@ After Ironhack, you have decided to work in the movie industry and you've found 
 
 We are going to create contact management app with React for this producer.
 
-You can find the starter code in the starter code folder of this Github repo.
+You can find the starter code in the starter code folder of this GitHub repo.
 
 ## Submission
 
@@ -20,10 +20,11 @@ You can find the starter code in the starter code folder of this Github repo.
   git push origin master
   ```
 
-- Navigate to your repo and [create a Pull Request](https://help.github.com/articles/creating-a-pull-request/)
+- Create Pull Request so your TAs can check up your work.
 
 
-## Installation 
+
+## Installation
 
 ```
 $ cd starter-code
@@ -38,9 +39,12 @@ $ npm start
 
 Let's take a look at the starter code.
 
-There is a JSON file with the producer contacts, named `contacts.json`. Import it and display only the 5 first contacts in a `<table>` and display the `picture`, `name`, and `popularity` of each contact.
+Inside `src` folder, we can find `contacts.json`, a JSON file with the producer's contacts. Import this file and **create an array of the 5 first contacts** to use as your initial state.
 
-To import it, in the `src/index.js`, you can simply write:
+Display that array of 5 contacts in a `<table>` and display the `picture`, `name`, and `popularity` of each contact.
+
+To import `contacts.json` in `App.js`, you can simply use:
+
 ```js
 import contacts from './contacts.json'
 ```
@@ -52,7 +56,9 @@ At the end of this iteration, your application should look like this:
 
 ### Iteration 2 | Add New Random Contacts
 
-In your application, create a "*Add Random Contact*, so that every time you click on this button, it adds a new random actor. 
+In your application, create a "*Add Random Contact* button so that every time you click on this button it adds a new random actor.
+
+First randomly select a contact from the larger `contacts` array. Then add that contact the array of 5 in your state. Don't forget to `setState()` to cause React to re-render the app.
 
 At the end of this iteration, your website will probably look like this:
 
@@ -61,7 +67,9 @@ At the end of this iteration, your website will probably look like this:
 
 ### Iteration 3 | Sort Contacts By Name And Popularity
 
-The producer asked you to add two new buttons to help him sorting his contacts. Create them so that when you click on it, it sorts the table on the `name` or `popularity` field.
+The producer asked you to add two new buttons to help them to sort their contacts. When you click on one of the buttons it should **sort the table by `name`** (alphabetically) and when click the other it should **sort by `popularity`** (highest first).
+
+Don't forget to `setState()` after you sort!
 
 This is what you may have at the end of this iteration:
 
@@ -70,7 +78,9 @@ This is what you may have at the end of this iteration:
 
 ### Iteration 4 | Remove Contacts
 
-The producer also would like to have the opportunity to remove some of its contacts. Implement a "*Delete*" button on each row of your `<table>` that will let the user remove some contacts.
+The producer also would like to remove some of their contacts. Implement a "*Delete*" button on each row of your `<table>` that will let the user remove the contact they clicked.
+
+When they click, you should get the index of the array of that actor and use it to remove the contact from the array. Don't forget to `setState()` after you remove the contact!
 
 At the end of this iteration, your web page may look like this after playing a little bit with the "*Delete*" buttons.
 
@@ -79,26 +89,8 @@ At the end of this iteration, your web page may look like this after playing a l
 
 ### Iteration 5 | Bonus | Styling
 
-Unfortunately, this contacts list isn't really production ready. So make it fancy!
+Unfortunately, this contact list isn't really production ready. This is the movie business! It's got to sparkle! Add some nice CSS to make the app "pop".
 
 
+Happy coding! :heart:
 
-## Hints
-
-Have a look at hints only if you are stuck for several minutes. All the code is encoded in Base64 and can be decoded here: https://www.base64decode.org/
-
-### Iteration 1 | Display 5 Contacts
-
-To display the first 5 contacts, first you can set a `contacts` state that will contain the list of all displayed contacts. Then you will need to loop on the variable `this.state.contacts` with a specific function
-
-```
-Y2xhc3MgQXBwIGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHsNCiAgY29uc3RydWN0b3IocHJvcHMpIHsNCiAgICBzdXBlcihwcm9wcyk7DQogICAgdGhpcy5zdGF0ZSA9IHsNCiAgICAgIGNvbnRhY3RzOiBjb250YWN0cy5zbGljZSgwLDUpDQogICAgfQ0KICB9DQogIA0KICBkaXNwbGF5Q29udGFjdHMoKSB7DQogICAgbGV0IHJlc3VsdCA9IFtdOw0KICAgIGZvciAobGV0IGkgPSAwOyBpIDwgdGhpcy5zdGF0ZS5jb250YWN0cy5sZW5ndGg7IGkrKykgew0KICAgICAgcmVzdWx0LnB1c2goDQogICAgICAgIDxDb250YWN0Um93DQogICAgICAgICAga2V5PXtpfSANCiAgICAgICAgICBjb250YWN0PXt0aGlzLnN0YXRlLmNvbnRhY3RzW2ldfSANCiAgICAgICAgLz4NCiAgICAgICkNCiAgICB9DQogICAgcmV0dXJuIHJlc3VsdDsNCiAgfQ0KDQogIHJlbmRlcigpIHsNCiAgICByZXR1cm4gKA0KICAgICAgPGRpdj4NCiAgICAgICAgPCEtLSAuLi4gLS0+DQogICAgICAgICAge3RoaXMuZGlzcGxheUNvbnRhY3RzKCl9DQogICAgICAgIDwhLS0gLi4uIC0tPg0KICAgICAgPC9kaXY+DQogICAgKTsNCiAgfQ0KfQ0KDQovLyBEb24ndCBmb3JnZXQgdG8gY3JlYXRlIGEgIkNvbnRhY3RSb3ciIGNvbXBvbmVudA==
-```
-
-### Iteration 2 | Add New Random Contacts
-
-For this iteration, you will need to create a function `addRandomContact` that will update the state (with the method `this.setState`). In the following example, we decided to create a `AddRandomContactButton` component.
-
-```js
-Y2xhc3MgQWRkUmFuZG9tQ29udGFjdEJ1dHRvbiBleHRlbmRzIFJlYWN0LkNvbXBvbmVudCB7DQogIHJlbmRlcigpIHsNCiAgICByZXR1cm4gKA0KICAgICAgPGJ1dHRvbiBvbkNsaWNrPXt0aGlzLnByb3BzLm9uQ2xpY2t9PkFkZCBSYW5kb20gQ29udGFjdDwvYnV0dG9uPg0KICAgICk7DQogIH0NCn0NCg0KY2xhc3MgQXBwIGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHsNCiAgLy8gLi4uDQoNCiAgYWRkUmFuZG9tQ29udGFjdCgpIHsNCiAgICBsZXQgbmV3Q29udGFjdHMgPSB0aGlzLnN0YXRlLmNvbnRhY3RzLnNsaWNlKCk7DQogICAgbmV3Q29udGFjdHMucHVzaChjb250YWN0c1tNYXRoLmZsb29yKE1hdGgucmFuZG9tKCkqY29udGFjdHMubGVuZ3RoKV0pDQogICAgdGhpcy5zZXRTdGF0ZSh7DQogICAgICBjb250YWN0czogbmV3Q29udGFjdHMNCiAgICB9KQ0KICB9DQoNCiAgcmVuZGVyKCkgew0KICAgIHJldHVybiAoDQogICAgICAgIHsvKiAuLi4gKi99DQogICAgICAgIHsvKiBXaXRob3V0IGEgQ29tcG9uZW50ICovfQ0KICAgICAgICA8YnV0dG9uIG9uQ2xpY2s9eygpID0+IHt0aGlzLmFkZFJhbmRvbUNvbnRhY3QoKX19PkFkZCBSYW5kb20gQ29udGFjdDwvYnV0dG9uPg0KICAgICAgICB7LyogT1Igd2l0aCBhIENvbXBvbmVudCAqL30NCiAgICAgICAgPEFkZFJhbmRvbUNvbnRhY3RCdXR0b24gb25DbGljaz17KCkgPT4ge3RoaXMuYWRkUmFuZG9tQ29udGFjdCgpfX0gLz4NCiAgICAgICAgey8qIC4uLiAqL30NCiAgICApOw0KICB9DQp9
-```
