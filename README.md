@@ -1,6 +1,6 @@
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-# IronContacts
+# LAB | React IronContacts
 
 ## Introduction
 
@@ -22,8 +22,6 @@ You can find the starter code in the starter code folder of this GitHub repo.
 
 - Create Pull Request so your TAs can check up your work.
 
-
-
 ## Installation
 
 ```
@@ -31,7 +29,6 @@ $ cd starter-code
 $ npm install
 $ npm start
 ```
-
 
 ## Instructions
 
@@ -46,24 +43,22 @@ Display that array of 5 contacts in a `<table>` and display the `picture`, `name
 To import `contacts.json` in `App.js`, you can simply use:
 
 ```js
-import contacts from './contacts.json'
+import contacts from './contacts.json';
 ```
 
 At the end of this iteration, your application should look like this:
 
 ![Screenshot](https://i.imgur.com/fPuwZXv.png)
 
-
 ### Iteration 2 | Add New Random Contacts
 
-In your application, create a *Add Random Contact* button so that every time you click on this button, it adds a new random actor.
+In your application, create a _Add Random Contact_ button so that every time you click on this button, it adds a new random actor.
 
 First, randomly select a contact from the larger `contacts` array. Then add that contact to the array that lives in your state (that's the previously created array of 5). Don't forget to `setState()` to cause React to re-render the app.
 
 At the end of this iteration, your website will probably look like this:
 
 ![Screenshot](https://i.imgur.com/GuNyYiU.png)
-
 
 ### Iteration 3 | Sort Contacts By Name And Popularity
 
@@ -75,21 +70,18 @@ This is what you may have at the end of this iteration:
 
 ![Screenshot](https://i.imgur.com/vUDGZ7Y.png)
 
-
 ### Iteration 4 | Remove Contacts
 
-The producer also would like to remove some of their contacts. Implement a *Delete* button on each row of your `<table>` that will let the user remove the contact they clicked.
+The producer also would like to remove some of their contacts. Implement a _Delete_ button on each row of your `<table>` that will let the user remove the contact they clicked.
 
 When they click, you should get the index of the array of that actor and use it to remove the contact from the array. Don't forget to `setState()` after you remove the contact!
 
-At the end of this iteration, your app may look like this (after playing a little bit with the *Delete* button):
+At the end of this iteration, your app may look like this (after playing a little bit with the _Delete_ button):
 
 ![Screenshot](https://i.imgur.com/N3K1K1k.png)
 
-
 ### Iteration 5 | Bonus | Styling
 
-Unfortunately, this contact list isn't production ready. This is the movie business! It has to sparkle! Add some beautiful CSS to make the app "pop". 
-
+Unfortunately, this contact list isn't production ready. This is the movie business! It has to sparkle! Add some beautiful CSS to make the app "pop".
 
 Happy coding! :heart:
