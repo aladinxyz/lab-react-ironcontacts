@@ -8,7 +8,7 @@ After Ironhack, you have decided to work in the movie industry, and you've found
 
 We are going to create a contact management app with React for this producer.
 
-You can find the starter code in the starter code folder of this GitHub repo.
+<!-- You can find the starter code in the starter code folder of this GitHub repo. -->
 
 ## Submission
 
@@ -25,7 +25,8 @@ You can find the starter code in the starter code folder of this GitHub repo.
 ## Installation
 
 ```
-$ cd starter-code
+$ git clone https://github.com/ironhack-labs/lab-react-ironcontacts.git
+$ cd lab-react-ironcontacts
 $ npm install
 $ npm start
 ```
