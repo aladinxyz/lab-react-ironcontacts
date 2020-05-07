@@ -10,6 +10,15 @@ We are going to create a contact management app with React for this producer.
 
 <!-- You can find the starter code in the starter code folder of this GitHub repo. -->
 
+## Installation
+
+```
+$ git clone https://github.com/ironhack-labs/lab-react-ironcontacts.git
+$ cd lab-react-ironcontacts
+$ npm install
+$ npm start
+```
+
 ## Submission
 
 - Upon completion, run the following commands
@@ -21,15 +30,6 @@ We are going to create a contact management app with React for this producer.
   ```
 
 - Create Pull Request so your TAs can check up your work.
-
-## Installation
-
-```
-$ git clone https://github.com/ironhack-labs/lab-react-ironcontacts.git
-$ cd lab-react-ironcontacts
-$ npm install
-$ npm start
-```
 
 ## Instructions
 
