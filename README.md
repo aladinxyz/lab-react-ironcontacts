@@ -10,10 +10,12 @@ We are going to create a contact management app with React for this producer.
 
 <!-- You can find the starter code in the starter code folder of this GitHub repo. -->
 
-## Installation
+## Setup
 
-```
-$ git clone https://github.com/ironhack-labs/lab-react-ironcontacts.git
+- Fork this repo
+- Clone this repo
+
+```shell
 $ cd lab-react-ironcontacts
 $ npm install
 $ npm start
