@@ -43,7 +43,9 @@ Inside `src` folder, we can find `contacts.json`, a JSON file with the producer'
 
 Display that array of 5 contacts in a `<table>` and display the `picture`, `name`, and `popularity` of each contact.
 
-For now this has to happen in `App.js`. So don't create a dedicated component to render the contact list. Because later we will add a delete button to every contact and to make this work we have to 'lift up the state' - this we haven't learned yet.
+For now, let's add all the code to `App.js`. This being said, don't proceed to create a dedicated component to render the contact list. This will become a bit more clear later when we add the delete button next to each contact. Unless you are already familiar with the concept of "lifting state up", you won't be able to actually remove contacts so having the whole code in one component that actually renders the contacts, allows us to mitigate this even if we are not using the lifting state up approach.
+
+Let's proceed.
 
 To import `contacts.json` in `App.js`, you can simply use:
 
@@ -57,7 +59,7 @@ At the end of this iteration, your application should look like this:
 
 ### Iteration 2 | Add New Random Contacts
 
-In your application, create a _Add Random Contact_ button so that every time you click on this button, it adds a new random actor.
+In your application, create an _Add Random Contact_ button so that every time you click on this button, it adds a new random actor.
 
 First, randomly select a contact from the larger `contacts` array. Then add that contact to the array that lives in your state (that's the previously created array of 5). Don't forget to `setState()` to cause React to re-render the app.
 
@@ -87,6 +89,6 @@ At the end of this iteration, your app may look like this (after playing a littl
 
 ### Iteration 5 | Bonus | Styling
 
-Unfortunately, this contact list isn't production ready. This is the movie business! It has to sparkle! Add some beautiful CSS to make the app "pop".
+Unfortunately, this contact list isn't production-ready. This is the movie business! It has to sparkle! Add some beautiful CSS to make the app "pop".
 
 Happy coding! :heart:
