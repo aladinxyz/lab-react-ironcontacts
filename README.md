@@ -43,6 +43,8 @@ Inside `src` folder, we can find `contacts.json`, a JSON file with the producer'
 
 Display that array of 5 contacts in a `<table>` and display the `picture`, `name`, and `popularity` of each contact.
 
+For now this has to happen in `App.js`. So don't create a dedicated component to render the contact list. Because later we will add a delete button to every contact and to make this work we have to 'lift up the state' - this we haven't learned yet.
+
 To import `contacts.json` in `App.js`, you can simply use:
 
 ```js
