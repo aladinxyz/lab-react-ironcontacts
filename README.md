@@ -50,7 +50,7 @@ Let's proceed.
 To import `contacts.json` in `App.js`, you can simply use:
 
 ```js
-import contacts from './contacts.json';
+import contacts from "./contacts.json";
 ```
 
 At the end of this iteration, your application should look like this:
@@ -70,7 +70,12 @@ First, randomly select a contact from the larger `contacts` array. Then add that
 
 At the end of this iteration, your website will probably look like this:
 
+<details>
+  <summary> Check image inside </summary>
+
 ![Screenshot](https://i.imgur.com/GuNyYiU.png)
+
+</details>
 
 ### Iteration 3 | Sort Contacts By Name And Popularity
 
@@ -80,7 +85,12 @@ Don't forget to `setState()` after you sort!
 
 This is what you may have at the end of this iteration:
 
+<details>
+  <summary> Check image inside </summary>
+
 ![Screenshot](https://i.imgur.com/vUDGZ7Y.png)
+
+</details>
 
 ### Iteration 4 | Remove Contacts
 
@@ -90,7 +100,12 @@ When they click, you should get the index of the array of that actor and use it 
 
 At the end of this iteration, your app may look like this (after playing a little bit with the _Delete_ button):
 
+<details>
+  <summary> Check image inside </summary>
+
 ![Screenshot](https://i.imgur.com/N3K1K1k.png)
+
+</details>
 
 ### Iteration 5 | Bonus | Styling
 
