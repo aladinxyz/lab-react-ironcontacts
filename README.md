@@ -55,7 +55,12 @@ import contacts from './contacts.json';
 
 At the end of this iteration, your application should look like this:
 
+<details>
+  <summary> Check image inside </summary>
+
 ![Screenshot](https://i.imgur.com/fPuwZXv.png)
+
+</details>
 
 ### Iteration 2 | Add New Random Contacts
 
