@@ -79,7 +79,7 @@ This is what you may have at the end of this iteration:
 
 The producer also would like to remove some of their contacts. Implement a _Delete_ button on each row of your `<table>` that will let the user remove the contact they clicked.
 
-When they click, you should get the index of the array of that actor and use it to remove the contact from the array. Don't forget to `setState()` after you remove the contact!
+When they click, you should get the id of that actor and use it to remove the contact from the array. Don't forget to `setState()` after you remove the contact!
 
 At the end of this iteration, your app may look like this (after playing a little bit with the _Delete_ button):
 
