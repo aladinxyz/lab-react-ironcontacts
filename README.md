@@ -28,19 +28,16 @@ We are going to create a contact management app for the producer using React.
   ## Getting Started
 
   1. After forking and cloning, open the LAB in VS Code.
-
   2. In the terminal, navigate to the root folder of the LAB.
 
      ```bash
      $ cd lab-react-ironcontacts
      ```
-
   3. Create a new React app _in the current folder_:
 
      ```bash
      $ npx create-react-app .
      ```
-
   4. Clean the `App.js` component so that it has the following structure:
 
      ```jsx
@@ -52,13 +49,11 @@ We are going to create a contact management app for the producer using React.
      }
      export default App;
      ```
-
   5. Run the React app:
 
      ```bash
      $ npm start
      ```
-
   6. Create a file `src/contacts.json` using the provided code:
 
      <details>
