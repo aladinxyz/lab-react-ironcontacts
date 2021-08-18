@@ -543,7 +543,8 @@ Once done, your application should look like this:
 
 In your application, create a _Add Random Contact_ button. Every time you click on this button, it should add a new random contact to the `contacts`. You should get random contacts from the remaining contacts that are still not showing.
 
-First, randomly select a contact from the array of remaining contacts. Then add that contact to the array that lives in your state (that's the previously created array of 5 contacts). Do not modify the state directly. Instead, use the state updater function returned from the `useState()`.
+First, randomly select a contact from the array of remaining contacts. Then add that contact to the array that lives in your state (that's the previously created array of 5 contacts). 
+Do not modify the state directly. Instead, use the state updater function returned from the `useState()`.
 
 At the end of this iteration, your website will probably look like this:
 
@@ -573,7 +574,7 @@ This is what you should have at the end of this iteration:
 
 The producer also would like to remove some of their contacts. Implement a _Delete_ button on each row of your `<table>` that will let the user remove the contact they clicked.
 
-When they click, you should get the `id` of that actor and use it to remove the contact from the array. Remember to update the state variable holding the contacts, after you remove the contact!
+When they click, you should get the `id` of that actor and use it to remove the contact from the array. Remember to update the state variable holding the contacts after you remove the contact!
 
 At the end of this iteration, your app may look like this (after playing a little bit with the _Delete_ button):
 
