@@ -478,9 +478,8 @@ We are going to create a contact management app for the producer using React.
    >   }
    > ]
    > ```
-   >
 
-     <hr>
+  <br>
 
      </details>
 
