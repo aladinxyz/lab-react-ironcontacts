@@ -23,7 +23,7 @@ We are going to create a contact management app for the producer using React.
   git push origin master
   ```
 
-- Create a Pull Request so that your TAs can check up your work.
+- Create a Pull Request so that your TAs can check your work.
 
 ## Getting Started
 
@@ -500,15 +500,15 @@ We are going to create a contact management app for the producer using React.
 
 Let's take a look at the starter code.
 
-Inside `src` folder, we now have a `contacts.json` file, containg the producer's contacts. Import the `contacts.json` file to `App.js`. Then, create a state variable named `contacts` and store an **array containing the first 5 contacts**.
+Inside the `src` folder, we now have a `contacts.json` file containing the producer's contacts. Import the `contacts.json` file to `App.js`. Then, create a state variable named `contacts` and store an **array containing the first 5 contacts**.
 
 Display that array of 5 contacts in a `<table>` and display the `picture`, `name`, and `popularity` of each contact.
 
-For now, let's render the content in `App.js`. This being said, don't proceed to create a dedicated component for the contact list. This will become a bit more clear later when we add the delete button next to each contact. As you are probably not familiar with the concept of "lifting state up" and passing callbacks as props, it is better to render everything in one component.
+For now, let's render the content in `App.js`. This being said, don't proceed to create a dedicated component for the contact list. The reason will become a bit clearer later when we add the delete button next to each contact. You are probably not yet familiar with the concept of "lifting state up" and passing callbacks as props. For this reason, it is better to render everything in one component for the moment.
 
 Let's proceed.
 
-To import `contacts.json` in `App.js`, you can simply use:
+To import `contacts.json` in `App.js`, you can use:
 
 ```js
 import contacts from "./contacts.json";
@@ -556,7 +556,7 @@ At the end of this iteration, your website will probably look like this:
 
 ### Iteration 4 | Sort Contacts by Name and Popularity
 
-The producer asked you to add two new buttons to help them sort their contacts. When you click on one of the buttons, it should **sort the table by `name`** (alphabetically) and when you click the other, it should **sort by `popularity`** (highest first).
+The producer asked you to add two new buttons to help them sort their contacts. When you click on one of the buttons, it should **sort the table by `name`** (alphabetically), and when you click the other, it should **sort by `popularity`** (highest first).
 
 Once you have sorted the array, remember to update the state variable holding the contacts.
 
@@ -573,9 +573,9 @@ This is what you should have at the end of this iteration:
 
 The producer also would like to remove some of their contacts. Implement a _Delete_ button on each row of your `<table>` that will let the user remove the contact they clicked.
 
-When they click, you should get the `id` of that actor and use it to remove the contact from the array. Remember to update the state variable holding the contacts, after you remove the contact!
+When they click, you should get the `id` of that actor and use it to remove the contact from the array. Remember to update the state variable holding the contacts after you remove the contact!
 
-At the end of this iteration, your app may look like this (after playing a little bit with the _Delete_ button):
+When done, your app should look like this (after playing a little bit with the _Delete_ button):
 
 <details>
   <summary> Check image inside </summary>
@@ -586,6 +586,6 @@ At the end of this iteration, your app may look like this (after playing a littl
 
 ### Iteration 6 | Bonus | Styling
 
-Unfortunately, this contact list isn't production-ready. This is the movie business! It has to sparkle! Add some beautiful CSS to make the app "pop".
+Unfortunately, this contact list isn't production-ready. We are in the movie business! It has to sparkle! Add some beautiful CSS to make the app "pop".
 
 Happy coding! :blue_heart:
