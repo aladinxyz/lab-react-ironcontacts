@@ -6,32 +6,49 @@
 
 After Ironhack, you have decided to work in the movie industry, and you've found a job where you need to manage the contacts of a famous producer.
 
-We are going to create a contact management app with React for this producer.
-
-<!-- You can find the starter code in the starter code folder of this GitHub repo. -->
+Your task is to create a contact management app for the producer using React.
 
 ## Setup
 
 - Fork this repo
+
 - Clone this repo
 
-```shell
-$ cd lab-react-ironcontacts
-$ npm install
-$ npm start
-```
+- Open the LAB and start:
+
+  ```bash
+  $ cd lab-react-ironcontacts
+  $ npm install
+  $ npm start
+  ```
+
 
 ## Submission
 
-- Upon completion, run the following commands
+- Upon completion, run the following commands:
 
-  ```
+  ```bash
   git add .
   git commit -m "done"
   git push origin master
   ```
 
-- Create Pull Request so your TAs can check up your work.
+- Create a Pull Request so that your TAs can check your work.
+
+
+## Getting Started
+
+Clean the `App.js` component so that it has the following structure:
+
+```jsx
+// src/App.js
+import "./App.css";
+
+function App() {
+  return <div className="App"></div>;
+}
+export default App;
+```
 
 ## Instructions
 
@@ -39,15 +56,15 @@ $ npm start
 
 Let's take a look at the starter code.
 
-Inside `src` folder, we can find `contacts.json`, a JSON file with the producer's contacts. Import this file and **create an array of the 5 first contacts** to use as your initial state.
+Inside the `src` folder we have a `contacts.json` file containing the producer's contacts. Import the `contacts.json` file to `App.js`. Once done, create a state variable named `contacts` and store an **array containing the first 5 contacts**.
 
-Display that array of 5 contacts in a `<table>` and display the `picture`, `name`, and `popularity` of each contact.
+Display that array of 5 contacts as a list in a `<table>` and display the `picture`, `name`, and `popularity` of each contact.
 
-For now, let's add all the code to `App.js`. This being said, don't proceed to create a dedicated component to render the contact list. This will become a bit more clear later when we add the delete button next to each contact. Unless you are already familiar with the concept of "lifting state up", you won't be able to actually remove contacts so having the whole code in one component that actually renders the contacts, allows us to mitigate this even if we are not using the lifting state up approach.
+For now, let's render the content in `App.js`. This being said, don't proceed to create a dedicated component for the contact list. The reason will become a bit clearer later when we add the delete button next to each contact. You are probably not yet familiar with the concept of "lifting state up" and passing callbacks as props. For this reason, it is better to render everything in one component for the moment.
 
 Let's proceed.
 
-To import `contacts.json` in `App.js`, you can simply use:
+To import `contacts.json` in `App.js`, you can use:
 
 ```js
 import contacts from "./contacts.json";
@@ -58,57 +75,73 @@ At the end of this iteration, your application should look like this:
 <details>
   <summary> Check image inside </summary>
 
-![Screenshot](https://i.imgur.com/fPuwZXv.png)
+![Screenshot - Iteration 1](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-react-ironcontacts-1.png)
 
 </details>
 
-### Iteration 2 | Add New Random Contacts
+### Iteration 2 | Conditionally Display Awards Info
 
-In your application, create an _Add Random Contact_ button so that every time you click on this button, it adds a new random actor.
+The producer would like to see the information about the _awards_ that contact has won.
 
-First, randomly select a contact from the larger `contacts` array. Then add that contact to the array that lives in your state (that's the previously created array of 5). Don't forget to `setState()` to cause React to re-render the app.
+Update the list and add two more columns "Won an Oscar" and "Won an Emmy", at the end of the table. Then, depending on the value `wonOscar` and `wonEmmy` of each contact, conditionally render a trophy icon :trophy: or no content.
+
+Once done, your application should look like this:
+
+<details>
+
+<summary>Check image inside</summary>
+
+![Screenshot - Iteration 2](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-react-ironcontacts-2.png)
+
+</details>
+
+### Iteration 3 | Add New Random Contacts
+
+In your application, create a _Add Random Contact_ button. Every time you click on this button, it should add a new random contact to the `contacts`. You should get random contacts from the remaining contacts that are still not showing.
+
+First, randomly select a contact from the array of remaining contacts. Then add that contact to the array that lives in your state (that's the previously created array of 5 contacts). Do not modify the state directly. Instead, use the state updater function returned from the `useState()`.
 
 At the end of this iteration, your website will probably look like this:
 
 <details>
   <summary> Check image inside </summary>
 
-![Screenshot](https://i.imgur.com/GuNyYiU.png)
+![Screenshot - Iteration 3](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-react-ironcontacts-3.png)
 
 </details>
 
-### Iteration 3 | Sort Contacts By Name And Popularity
+### Iteration 4 | Sort Contacts by Name and Popularity
 
-The producer asked you to add two new buttons to help them sort their contacts. When you click on one of the buttons, it should **sort the table by `name`** (alphabetically) and when you click the other, it should **sort by `popularity`** (highest first).
+The producer asked you to add two new buttons to help them sort their contacts. When you click on one of the buttons, it should **sort the table by `name`** (alphabetically), and when you click the other, it should **sort by `popularity`** (highest first).
 
-Don't forget to `setState()` after you sort!
+Once you have sorted the array, remember to update the state variable holding the contacts.
 
-This is what you may have at the end of this iteration:
+This is what you should have at the end of this iteration:
 
 <details>
   <summary> Check image inside </summary>
 
-![Screenshot](https://i.imgur.com/vUDGZ7Y.png)
+![Screenshot - Iteration 4](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-react-ironcontacts-4.png)
 
 </details>
 
-### Iteration 4 | Remove Contacts
+### Iteration 5 | Remove Contacts
 
 The producer also would like to remove some of their contacts. Implement a _Delete_ button on each row of your `<table>` that will let the user remove the contact they clicked.
 
-When they click, you should get the id of that actor and use it to remove the contact from the array. Don't forget to `setState()` after you remove the contact!
+When they click, you should get the `id` of that actor and use it to remove the contact from the array. Remember to update the state variable holding the contacts after you remove the contact!
 
-At the end of this iteration, your app may look like this (after playing a little bit with the _Delete_ button):
+When done, your app should look like this (after playing a little bit with the _Delete_ button):
 
 <details>
   <summary> Check image inside </summary>
 
-![Screenshot](https://i.imgur.com/N3K1K1k.png)
+![Screenshot - Iteration 5](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-react-ironcontacts-5.png)
 
 </details>
 
-### Iteration 5 | Bonus | Styling
+### Iteration 6 | Bonus | Styling
 
-Unfortunately, this contact list isn't production-ready. This is the movie business! It has to sparkle! Add some beautiful CSS to make the app "pop".
+Unfortunately, this contact list isn't production-ready. We are in the movie business! It has to sparkle! Add some beautiful CSS to make the app "pop".
 
-Happy coding! :heart:
+Happy coding! :blue_heart:
