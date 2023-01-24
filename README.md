@@ -270,9 +270,9 @@ Happy coding! :blue_heart:
 
   ```js
   const projects = [
-    { id: '127fae', name: 'EatBCN', stack: 'React, Express' },
-    { id: '985afw', name: 'Levels', stack: 'React, Express' },
-    { id: '347eef', name: 'IronClub', stack: 'React, Java' }
+    { id: "127fae", name: "EatBCN", stack: "React, Express" },
+    { id: "985afw", name: "Levels", stack: "React, Express" },
+    { id: "347eef", name: "IronClub", stack: "React, Java" }
   ];
   ```
 
@@ -323,10 +323,10 @@ Happy coding! :blue_heart:
   Here is an example of rendering a list of elements using the `map()` method:
 
   ```js
-  const projects = [
-    { id: '127fae', name: 'EatBCN', stack: 'React, Express' },
-    { id: '985afw', name: 'Levels', stack: 'React, Express' },
-    { id: '347eef', name: 'IronClub', stack: 'React, Java' }
+const projects = [
+    { id: "127fae", name: "EatBCN", stack: "React, Express" },
+    { id: "985afw", name: "Levels", stack: "React, Express" },
+    { id: "347eef", name: "IronClub", stack: "React, Java" }
   ]
 
   function ProjectList() {
@@ -439,9 +439,8 @@ Happy coding! :blue_heart:
   git remote -v
   ```
 
-If the link shown is the same as the main Ironhack repository, you will need to fork the repository to your GitHub account first, and then clone your fork to your local machine to be able to push the changes.
-
-Note: You may want to make a copy of the code you have locally, to avoid losing it in the process.
+  If the link shown is the same as the main Ironhack repository, you will need to fork the repository to your GitHub account first, and then clone your fork to your local machine to be able to push the changes.
+  Note: You may want to make a copy of the code you have locally, to avoid losing it in the process.
 
   <br>
 
