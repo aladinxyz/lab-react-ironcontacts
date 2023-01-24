@@ -171,6 +171,8 @@ Happy coding! :blue_heart:
 <details>
   <summary>I got the error: "Cannot find module 'Node.js'". How can I resolve it?</summary>
 
+  <br>
+
   The error "Cannot find module" in a Node.js application means that the module you are trying to import or use does not exist in your project or cannot be found by Node.js.
 
   There are a few things you can try to resolve the issue:
@@ -202,6 +204,8 @@ Happy coding! :blue_heart:
 <details>
   <summary>I got the message: "Something is already running at ... Would you like to run the app at another port instead? [Y/n]". What should I do?</summary>
 
+  <br>
+
   This message means that another process is already using the specified port. This could be another instance of your React app, or it could be another application that is using that port.
 
   To resolve this, you can change the port your React app is running on by typing Y when prompted. This will kill the process and automatically start the server on another port.
@@ -216,6 +220,8 @@ Happy coding! :blue_heart:
 
 <details>
   <summary>How do I display an <em>image</em> in a React component?</summary>
+
+  <br>
 
   To display an image in a React component, you should first `import` the image in the component and then render it. Here is an example of how to do this:
 
@@ -242,6 +248,8 @@ Happy coding! :blue_heart:
 <details>
   <summary>I got the warning in my React app:" 'variable' is assigned a value but never used: no-unused-vars". What should I do?</summary>
 
+  <br>
+
   This warning is a linting error thrown by a linting tool in your React project, and it is warning you that the variable is created, but that it is never being used in your code.
 
   To resolve this issue, you can either use the variable in your code, or you can simply remove the variable if you don't need it.
@@ -255,6 +263,8 @@ Happy coding! :blue_heart:
 
 <details>
   <summary>I got the warning: "Each child in a list should have a unique 'key' prop". How can I resolve it?</summary>
+
+  <br>
 
   The warning *"Each child in a list should have a unique “key” prop"*  means that you are trying to render a list of elements, but one or more elements is missing the `key` prop.
 
@@ -306,6 +316,7 @@ Happy coding! :blue_heart:
 <details>
   <summary>How to render a list of elements from an array in a React component?</summary>
 
+  <br>
 
   To render a list of elements from an array in a React component, you can use the method `map()` to loop over the `projects` array and return JSX elements to be rendered. 
 
@@ -361,6 +372,8 @@ Happy coding! :blue_heart:
 <details>
   <summary>How do I update a state variable in my React component? How do I use the useState hook in my React component?</summary>
 
+  <br>
+  
   To update a state variable in a React component, you should use the `useState` hook. This hook returns an array with two elements: the **current value** of the state variable and a **function to update it**. Here is an example of how to use `useState` to update the `count` state variable:
 
   ```jsx
