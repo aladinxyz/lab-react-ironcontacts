@@ -178,15 +178,11 @@ Happy coding! :blue_heart:
   There are a few things you can try to resolve the issue:
 
   1. **Dependencies are not installed**: Make sure that all dependencies are installed.
-   
    To do this, run the command `npm install` in the root folder of your project.
-
    This will install all of the dependencies listed in the project's `package.json` file, and ensure that all of the modules that your Node'js application requires are available.
 
   2. **Module is not installed**: Make sure that the *package* you are trying to use is listed in the project's `package.json` and that it is installed.
-
    To do this, run the command `npm install <package_name>`, replacing the `<package_name>` with the name of the package.
-
    This will add the package to the list of dependencies in the `package.json` file, and install it in the project.
 
   3. **Module is not imported:** Make sure that you've imported the module/package correctly and that the `import` statement is spelled correctly and available in the correct place in your code.
@@ -267,9 +263,9 @@ Happy coding! :blue_heart:
   <br>
 
   The warning *"Each child in a list should have a unique “key” prop"*  means that you are trying to render a list of elements, but one or more elements is missing the `key` prop.
-
+  
   To fix this, add a `key` prop to each element you return from the `map()` when rendering the list. The key should be a unique identifier for that element, such as an item ID or the id of the document from the database.
-
+  
   For example, if you have an array of objects with the following structure:
 
   ```js
@@ -301,7 +297,7 @@ Happy coding! :blue_heart:
 
   When creating lists we must always assign the `key` prop to the outermost (enclosing) element returned from the `map()`, in this case the `div`. We are setting the `key` prop to each `div` element we render in the list.
 
-  **Important:** You should not use *index* of the `map` as *key*. This is considered an *anti-pattern* that may lead to unpredictable results.
+  **Important**: You should not use *index* of the `map` as *key*. This is considered an *anti-pattern* that may lead to unpredictable results.
 
   <br>
 
@@ -373,7 +369,7 @@ Happy coding! :blue_heart:
   <summary>How do I update a state variable in my React component? How do I use the useState hook in my React component?</summary>
 
   <br>
-  
+
   To update a state variable in a React component, you should use the `useState` hook. This hook returns an array with two elements: the **current value** of the state variable and a **function to update it**. Here is an example of how to use `useState` to update the `count` state variable:
 
   ```jsx
@@ -430,18 +426,18 @@ Happy coding! :blue_heart:
 
   1. **You have not committed your changes:** Before you can push your changes to the repository, you need to commit them using the `git commit` command. Make sure you have committed your changes and try pushing again. To do this, run the following terminal commands from the project folder:
 
-   ```bash
-   git add .
-   git commit -m "Your commit message"
-   git push
-   ```
+    ```bash
+    git add .
+    git commit -m "Your commit message"
+    git push
+    ```
 
    2. **You do not have permission to push to the repository:** If you have cloned the repository directly from the main Ironhack repository without making a *Fork* first, you do not have write access to the repository.
    To check which remote repository you have cloned, run the following terminal command from the project folder:
 
-   ```bash
-   git remote -v
-   ```
+    ```bash
+    git remote -v
+    ```
 
   If the link shown is the same as the main Ironhack repository, you will need to fork the repository to your GitHub account first, and then clone your fork to your local machine to be able to push the changes.
 
