@@ -2,6 +2,29 @@
 
 # LAB | React IronContacts
 
+<details>
+  <summary>
+   <h2>Learning Goals</h2>
+  </summary>
+
+  This exercise allows you to practice and apply the concepts and techniques taught in class. 
+
+  Upon completion of this exercise, you will be able to:
+
+  - Use the `useState` hook to create state variables and add state to React components.
+  - Use state variable setter functions to update state and trigger component re-render.
+  - Use methods `map()` and `filter()` to render array data as a list of elements.
+  - Use the `key` attribute in React components to set a unique key for each element in a list.
+  - Remove items from a list.
+  - Use operators `?` and `&&` to conditionally render content.
+  - Create event handler functions to handle user interactions and browser events.
+  - Create controlled components to manage the form inputs.
+
+  <br>
+  <hr> 
+
+</details>
+
 ## Introduction
 
 After Ironhack, you have decided to work in the movie industry, and you've found a job where you need to manage the contacts of a famous producer.
