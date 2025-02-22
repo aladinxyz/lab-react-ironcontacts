@@ -95,12 +95,7 @@ import contacts from "./contacts.json";
 
 At the end of this iteration, your application should look like this:
 
-<details>
-  <summary> Check image inside </summary>
 
-![Screenshot - Iteration 1](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-react-ironcontacts-1.png)
-
-</details>
 
 ### Iteration 2 | Conditionally Display Awards Info
 
@@ -110,13 +105,7 @@ Update the list and add two more columns "Won an Oscar" and "Won an Emmy", at th
 
 Once done, your application should look like this:
 
-<details>
 
-<summary>Check image inside</summary>
-
-![Screenshot - Iteration 2](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-react-ironcontacts-2.png)
-
-</details>
 
 ### Iteration 3 | Add New Random Contacts
 
@@ -126,12 +115,6 @@ First, randomly select a contact from the array of remaining contacts. Then add 
 
 At the end of this iteration, your website will probably look like this:
 
-<details>
-  <summary> Check image inside </summary>
-
-![Screenshot - Iteration 3](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-react-ironcontacts-3.png)
-
-</details>
 
 ### Iteration 4 | Sort Contacts by Name and Popularity
 
@@ -141,12 +124,7 @@ Once you have sorted the array, remember to update the state variable holding th
 
 This is what you should have at the end of this iteration:
 
-<details>
-  <summary> Check image inside </summary>
 
-![Screenshot - Iteration 4](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-react-ironcontacts-4.png)
-
-</details>
 
 ### Iteration 5 | Remove Contacts
 
@@ -155,13 +133,6 @@ The producer also would like to remove some of their contacts. Implement a _Dele
 When they click, you should get the `id` of that actor and use it to remove the contact from the array. Remember to update the state variable holding the contacts after you remove the contact!
 
 When done, your app should look like this (after playing a little bit with the _Delete_ button):
-
-<details>
-  <summary> Check image inside </summary>
-
-![Screenshot - Iteration 5](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-react-ironcontacts-5.png)
-
-</details>
 
 ### Iteration 6 | Bonus | Styling
 
