@@ -322,11 +322,6 @@ Happy coding! :blue_heart:
 
   **Important**: You should not use *index* of the `map` as *key*. This is considered an *anti-pattern* that may lead to unpredictable results.
 
-  <br>
-
-  For more information, check: [React Docs - Rendering Lists](https://beta.reactjs.org/learn/rendering-lists#keeping-list-items-in-order-with-key)
-
-  <br>
 
   [Back to top](#faqs)
 
@@ -380,7 +375,6 @@ const projects = [
 
   **Important**: You should not use *index* of the `map` as *key*. This is considered an *anti-pattern* that may lead to unpredictable results.
 
-  For more information, check: [React Docs - Rendering Lists](https://beta.reactjs.org/learn/rendering-lists#keeping-list-items-in-order-with-key) 
 
   <br>
 
