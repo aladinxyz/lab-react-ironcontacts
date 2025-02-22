@@ -73,7 +73,6 @@ function App() {
 export default App;
 ```
 
-## Instructions
 
 ### Iteration 1 | Display 5 Contacts
 
@@ -136,9 +135,7 @@ When done, your app should look like this (after playing a little bit with the _
 
 ### Iteration 6 | Bonus | Styling
 
-Unfortunately, this contact list isn't production-ready. We are in the movie business! It has to sparkle! Add some beautiful CSS to make the app "pop".
 
-Happy coding! :blue_heart:
 
 <br>
 
